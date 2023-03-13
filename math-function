@@ -1,0 +1,9 @@
+@RestController
+public class SquareRootController {
+
+    @GetMapping("/sqrt/{number}")
+    public double getSquareRoot(@PathVariable double number) {
+        return Math.sqrt(number);
+    }
+    
+}
